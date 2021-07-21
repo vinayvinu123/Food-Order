@@ -1,0 +1,33 @@
+<nav class="navbar" style="justify-content: center;background-color: aqua;">
+  <span class="navbar-brand mb-0 h1" >Food Ordered List</span>
+</nav>
+<div class="p-4 order">
+  <div class="search">
+    <div class="form-group">
+      <label for="inputAddress">Search</label>
+      <input type="text" class="form-control" id="inputCheese" placeholder="search here" [(ngModel)]="search" (keyup)="searchData()" >
+    </div>
+  </div>
+<div class="order-list">
+  <table class="table">
+    <tr>
+      <th scope="col">Order By</th>
+      <th scope="col">Cheese Slice</th>
+      <th scope="col">Bun Qty</th>
+      <th scope="col" >cutlet Qty</th>
+      <th scope="col">salad</th>
+    </tr>
+    <tr *ngFor="let order of orderList;let i = index">
+      <td scope="row">{{order.userName}}</td>
+      <td scope="row">{{order.cheeseSlices}}</td>
+      <td scope="row">{{order.bun}}</td>
+      <td scope="row">{{order.cutlets}}</td>
+      <td scope="row">{{order.salads}}</td>
+    </tr>
+  </table>
+</div>
+<div class="footer">
+  <button type="button" class="btn btn-primary" (click)="returnToHome()">back</button>
+</div>
+
+</div>

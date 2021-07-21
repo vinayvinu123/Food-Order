@@ -1,0 +1,12 @@
+.main-block{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-content{
+  min-width: 400px;
+}
+
+.navbar{
+  background-color: aqua;
+}

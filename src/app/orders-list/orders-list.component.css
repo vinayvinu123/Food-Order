@@ -1,0 +1,12 @@
+
+.search{
+  max-width: 400px;
+}
+table{
+  border: 1px solid blanchedalmond;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
